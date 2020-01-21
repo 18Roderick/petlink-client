@@ -1,6 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Button } from 'antd';
 
-export default ()=> {
+const Adopta = () => (
+	<div className="Adopta">
+		<Button type="primary" color="success" icon="download" size={'large'}>
+			Button
+		</Button>
+	</div>
+);
 
-    return(<h1>Pagina de adopcion</h1>)
-}
+export default Adopta;

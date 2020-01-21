@@ -1,30 +1,19 @@
-import React from "react";
-import {
-  Button,
-  Container,
-  Paper,
-  Grid,
-  MuiThemeProvider,
-  createMuiTheme
-} from "@material-ui/core";
+import React from 'react';
 
-import TabPanel from "./components/navbar";
-import { defaultUi } from "./components/uiSettings";
-import Navigation from './components/navbar'
+import { ConfigProvider } from 'antd';
 
-import './index.css'
+import Navigation from './components/navbar';
 
-const outerTheme = createMuiTheme(defaultUi);
+import './index.css';
+
+import 'antd/dist/antd.css';
 
 function App() {
-  //const classes = useStyles();
-  return (
-    <MuiThemeProvider theme={outerTheme}>
-      <Container spacing={3}>
-        <Navigation/>
-      </Container>
-    </MuiThemeProvider>
-  );
+	return (
+		<ConfigProvider>
+			<Navigation />
+		</ConfigProvider>
+	);
 }
 
 export default App;
