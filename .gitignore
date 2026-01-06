@@ -34,3 +34,4 @@ yarn-error.log*
 
 # Old files
 package.json.old
+*.timestamp_*.js
